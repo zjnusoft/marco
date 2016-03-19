@@ -1,0 +1,39 @@
+# Site settings
+title: marco-lee
+description: 'Marco-Lee - a ordinary IT engineer from china Hang Zhou'
+url: 'http://zjnusoft.github.io/marco'
+baseurl: '/marco/'
+# google_analytics: 'UA-XXXXXX-X'
+# disqus_shortname: 'your-disqus-name'
+
+author:
+  name: 'marco'
+  email: zjnusoft@qq.com
+  twitter_username: zjnusoft
+  facebook_username: zjnusoft
+  github_username:  zjnusoft
+  linkedin_username:  zjnusoft
+
+defaults:
+  -
+    scope:
+      path: ''
+      type: 'posts'
+    values:
+        layout: 'post'
+
+# Build settings
+destination: _site
+paginate: 10
+permalink: /:year/:title/
+markdown: kramdown
+highlighter: rouge
+
+kramdown:
+  # use Github Flavored Markdown
+  input: GFM
+  # do not replace newlines by <br>s
+  hard_wrap: false
+
+gems: ['jekyll-paginate']
+exclude: ['README.md', 'Gemfile', 'Gemfile.lock', 'screenshot.png']
